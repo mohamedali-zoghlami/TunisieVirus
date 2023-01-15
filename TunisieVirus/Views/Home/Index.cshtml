@@ -1,0 +1,25 @@
+﻿@model IEnumerable<TunisieVirus.Models.virusCounter>
+<html>
+    <body>
+<div class="containerr">
+<div class="text-center">
+    <h1 class="texttitle"><span class="colorred">Tunisie</span>Virus</h1>
+    <p>Suivre l'état des virus en <span class="colorred">Tunisie</span>!</p>
+   @using(Html.BeginForm("HomeController", "Summary" ))
+            {
+            <select class="form-control" id="select" name="name">
+                @foreach(var c in Model)
+                {
+                    <option value=@(c.name) class="text-center">
+                        @(c.name)
+                    </option>
+                }
+            </select>
+            <br />
+            <Button asp-controller="HomeController" asp-action="Summary" asp-route-name=ch()> Summary</Button>
+ 
+   }
+</div>
+</div>
+</body>
+</html>

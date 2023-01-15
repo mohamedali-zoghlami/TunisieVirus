@@ -1,0 +1,32 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.colorred{
+    color:red;
+}
+.containerr{
+    margin-top:10%;
+}
+.texttitle{
+    font-size:48px;
+}
+.tablealign{
+    margin-left:48%;
+    margin-right:80%;
+}
